@@ -1,0 +1,31 @@
+.single-product{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "product-diff-colour iphonexsimage"
+    "prod-details prod-details";
+    gap: 1em;
+}
+.product-diff-colour{
+    grid-area: product-diff-colour;
+    display: grid;
+    
+}
+.product-diff-colour img{
+    border: 1px solid white;
+    width: 7em;
+}
+.iphonexsimage{
+    grid-area: prod-main-pic;
+}
+
+.prod-summary{
+    grid-area: prod-details;
+}
+.legal{
+    text-align: center;
+}
+.copyright{
+    text-align: center;
+}

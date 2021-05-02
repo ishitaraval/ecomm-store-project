@@ -1,0 +1,75 @@
+.single-product{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "product-diff-colour iphonexsimage"
+    "prod-details prod-details";
+    gap: 1em;
+}
+.product{
+   display: flex;
+   flex-direction: row;
+   justify-content: right;
+   align-items: stretch;
+   align-content: center;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 1em;
+    
+}
+.product-prop, .product-prop fieldset> ol, .product-prop fieldset> ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+.product , .product-details{
+    align-self: flex-start;
+}
+.product-details{
+   margin-bottom: 2em;
+}
+.product-diff-colour img{
+    border: 1px solid white;
+    width: 7em;
+}
+.iphonexsimage{
+    grid-area: prod-main-pic;
+}
+.prod-summary{
+    grid-area: product-details;
+}
+.legal{
+    text-align: center;
+}
+.copyright{
+    text-align: center;
+}
+.shop{
+    background-color:black;
+    color: white;
+}
+.iphonex-prop{
+    list-style-type: none;
+    display:inline-block;
+    vertical-align:top;
+    min-width:15%;
+    max-width:15%;
+}
+.mainimage{
+    grid-column: span 3;
+}
+@media only screen and (min-width: 992px){
+    .main-product{
+        display: block;
+    }
+    .single-product{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2em;
+    }
+   
+}
